@@ -10,27 +10,16 @@ Given the Hackathon’s time constraint, and the reality that our team is compos
 
 
 DATA FILES: 
-Capacity_data.csv: 
-- Used in max_capacity.csv 
-- Building name, furniture space percentage, total sq ft 
-Movement_data.csv: 
-- Used in High_traffic_spaces_daily.py, High_traffic_spaces_hourly.py, 
-- Student ID, Building, Entrance Time, Exit Time 
-Positive_data.csv: 
-- Used in Contact_tracing.py 
-Positive_times.csv 
-- Used in Contact_tracing.py 
-- Created by running def positive_times in Contact_tracing.py Thedata.csv 
-- Used in max_capacity.py 
-- Student ID, Building, Entrance Time, Exit Time 
+- Capacity_data.csv:Used in max_capacity.csv. Building name, furniture space percentage, total sq ft 
+- Movement_data.csv: Used in High_traffic_spaces_daily.py, High_traffic_spaces_hourly.py. Student ID, Building, Entrance Time, Exit Time 
+- Positive_data.csv: Used in Contact_tracing.py 
+- Positive_times.csv: Used in Contact_tracing.py. Created by running def positive_times in Contact_tracing.py
+- Thedata.csv: Used in max_capacity.py. Student ID, Building, Entrance Time, Exit Time 
 
 CODE: 
-Contact_tracing.py: 
-- Using student movement data and COVID-testing data, this code returns a list of student  IDs who have come in contact with one or more COVID-positive students on a specific  day, warranting immediate testing, quarantine, and safety measures on their behalf. High_traffic_spaces_daily.py: 
-- Using student movement data, this code returns a list of the buildings on campus and  their visits per day, presented in descending order. With this information, students can  choose safer areas to travel to or through, maximizing individual and group safety. High_traffic_spaces_hourly.py 
-- Using student movement data, this code returns a list of the buildings on campus and  their visits each hour. With this information, students can choose safer areas to travel to  or through, maximizing individual and group safety. 
-Max_capacity.py 
-- Returns a T or F value for a certain building, T = capacity has been reached or passed,  F = capacity has not been reached. Capacity is calculated by the formula, (1 -  furn_space/100) * total_space/36. Formula was found from this site. 
-Plot_hourly_data.py 
-- Plots hourly data created by the High_traffic_spaces_hourly.py. Will require some  rearrangement of High_traffic_spaces_hourly.py’s data before input. 
+- Contact_tracing.py: Using student movement data and COVID-testing data, this code returns a list of student  IDs who have come in contact with one or more COVID-positive students on a specific  day, warranting immediate testing, quarantine, and safety measures on their behalf.
+- High_traffic_spaces_daily.py: Using student movement data, this code returns a list of the buildings on campus and  their visits per day, presented in descending order. With this information, students can  choose safer areas to travel to or through, maximizing individual and group safety.
+- High_traffic_spaces_hourly.py: Using student movement data, this code returns a list of the buildings on campus and  their visits each hour. With this information, students can choose safer areas to travel to  or through, maximizing individual and group safety. 
+- Max_capacity.py: Returns a T or F value for a certain building, T = capacity has been reached or passed,  F = capacity has not been reached. Capacity is calculated by the formula, (1 -  furn_space/100) * total_space/36. Formula was found from this site. 
+- Plot_hourly_data.py: Plots hourly data created by the High_traffic_spaces_hourly.py. Will require some  rearrangement of High_traffic_spaces_hourly.py’s data before input. 
 
